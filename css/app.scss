@@ -6,8 +6,8 @@
 
 // variables
 
-$primary: #18988B;
-$secondary: #003057;
+$primary: #265080;
+$secondary: #F0BD57;
 $txt: #4E4B44;
 $white: #fff;
 
@@ -15,6 +15,19 @@ $white: #fff;
 ::selection {
     color: $white;
     background: $secondary;
+}
+
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1170px;
+    }
 }
 
 
@@ -85,7 +98,7 @@ a {
 }
 
 .bg-primary {
-    background: $primary!important ;
+    background: $secondary!important ;
 }
 
 .btn-theme {
@@ -101,7 +114,7 @@ a {
     align-items: center;
     justify-content: center;
     align-content: center;
-
+    background-color: $secondary;
     &::first-letter {
         text-transform: uppercase;
     }
@@ -399,52 +412,67 @@ body {
 }
 
 footer {
-    background-color: #4E4B44;
+    background-color: #535a62;
 
     .footer-upper {
-        font-size: 20px;
-        color: #FFFFFF;
-        font-family: "DarkerGrotesque-regular";
-
-        a {
-            color: #FFFFFF;
-
-            &:hover {
-                color: $primary;
-            }
-        }
+        font-size: 22px; 
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-family: "DarkerGrotesque-regular"; 
     }
 
     .footer-link {
-        text-transform: uppercase;
-        font-size: 19px;
-        border-bottom: 1px solid $white;
+        text-transform: capitalize; 
         font-family: "DarkerGrotesque-regular";
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
+        padding-left: 0;
+         
 
-        @media(max-width:768px) {
-            flex-direction: column;
-            align-items: center;
+        li {
+            list-style: none;
         }
 
-        a {
-            color: #FFFFFF;
+
+        a {  
+            color: #d5d5d5;
+            font-size: 20px;
 
             &:hover {
-                color: $primary;
+                color: #fff;
             }
         }
     }
 
-    .footer-bottom {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-family: "DarkerGrotesque-regular";
-        color: $white;
-        font-weight: 500;
-        text-align: center;
+   
+}
+
+.footer-bottom {
+    background: #EAE4DF;
+    font-size: 19px;
+
+    .social {
+        display: flex;
+        margin-bottom: 0;
+        margin: 0;
+
+        li {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+
+            a {
+                color: $primary;
+                padding: 0 5px;
+                margin-right: 5px;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
     }
 }
 
@@ -797,12 +825,14 @@ body::-webkit-scrollbar-thumb {
     width: 95%;
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0; 
-    @media(max-width:768px){
+    margin: 50px 0;
+
+    @media(max-width:768px) {
         flex-direction: column;
     }
+
     li {
-        flex: 49%; 
+        flex: 49%;
         font-size: 40px;
         line-height: 1;
         color: #003057;
@@ -815,10 +845,12 @@ body::-webkit-scrollbar-thumb {
         padding-left: 64px;
         list-style: none;
         background-image: url('../images/mark.svg');
-        @media(max-width:768px){
+
+        @media(max-width:768px) {
             flex: 100%;
-            font-size: 30px; 
+            font-size: 30px;
         }
+
         &::marker {
             height: 25px;
             width: 25px;
