@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    position: relative;
 }
 
 // variables
@@ -12,10 +13,13 @@ $txt: #4E4B44;
 $white: #fff;
 
 
+
 ::selection {
     color: $white;
     background: $secondary;
 }
+
+
 
 
 @media (min-width: 1400px) {
@@ -78,6 +82,10 @@ $white: #fff;
     src: url(../fonts/DarkerGrotesque-SemiBold.ttf);
 }
 
+.darkerGrotesque-bold {
+    font-family: "DarkerGrotesque-bold" !important;
+}
+
 a {
     text-decoration: none;
 }
@@ -98,7 +106,7 @@ a {
 }
 
 .bg-primary {
-    background: $secondary!important ;
+    background: $primary!important ;
 }
 
 .btn-theme {
@@ -106,17 +114,35 @@ a {
     width: auto;
     margin: 5px;
     border-radius: 7px;
-    padding: 6px 30px;
-    font-size: 19px;
+    padding: 6px 15px;
+    font-size: 22px;
     color: #fff;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    background-color: $secondary;
+
+    &:hover {
+        color: #ffffff;
+        background: #11517d !important;
+    }
+
     &::first-letter {
         text-transform: uppercase;
+    }
+
+    &.bg-primary {
+        &:hover {
+            color: #ffffff;
+            background: $secondary !important;
+        }
+    }
+
+    &.bg-secondary {
+        &:hover {
+            color: #ffffff;
+            background: $primary !important;
+        }
     }
 
     &.btn-line {
@@ -136,7 +162,7 @@ a {
     color: $txt;
     font-family: "Roboto-Regular";
     font-weight: 500;
-    font-size: 21px;
+    font-size: 19px;
 }
 
 
@@ -145,6 +171,11 @@ a {
 
 
 // font classes 
+
+
+.how-we-works{
+    background: #FFF7F2;
+}
 
 
 body {
@@ -162,8 +193,8 @@ body {
 //header
 
 .siteHeader {
-    padding: 25px 0;
-    background: #E3DDD8;
+
+    background: #fff7f1;
 
     .navCustom {
         .nav-link {
@@ -171,12 +202,12 @@ body {
                 text-transform: uppercase;
             }
 
-            font-size: 34px;
-            margin: 0 30px;
-            color: $secondary;
+            font-size: 24px;
+            margin: 0 10px;
+            color:#172158;
 
             &:hover {
-                color: $primary;
+                color: $secondary;
             }
 
             &.current {
@@ -184,18 +215,28 @@ body {
                 font-weight: bold;
             }
 
-            @media (max-width:1600px) {
-                font-size: 1.7rem;
-                // margin: 0 12px;
 
+        }
+
+        .nav-item {
+            .dropdown-menu {
+                padding: 15px 0;
+
+                .dropdown-item {
+                    font-size: 22px !important;
+
+                    &:hover {
+                        background: $secondary;
+                        color: white;
+                    }
+                }
             }
-
         }
     }
 }
 
 .banner {
-    background: #E3DDD8;
+    background: #fff7f2;
     min-height: 90vh;
 
     .inner {
@@ -208,11 +249,11 @@ body {
     }
 
     .intro-title {
-        font-size: 7rem;
+        font-size: 70px;
         font-family: "DarkerGrotesque-bold";
-        color: $primary;
-        line-height: 0.8;
-        margin-bottom: 35px;
+        color: #265080;
+        line-height: 1;
+        margin-bottom: 25px;
 
         @media (max-width:768px) {
             text-align: center !important;
@@ -227,10 +268,10 @@ body {
     background: #E8E1D9;
 
     .title {
-        font-size: 80px;
+        font-size: 48px;
         text-align: center;
         line-height: 0.8;
-        color: $secondary;
+        color: $primary;
         font-family: "DarkerGrotesque-semibold";
 
         @media (max-width:768px) {
@@ -251,15 +292,17 @@ body {
 
 }
 
-.help {
+.campaign {
     background: #E1D8CE;
 
+
+
     .title {
-        font-size: 80px;
+        font-size: 3.9rem;
         text-align: center;
         line-height: 1;
         color: $primary;
-        font-family: "DarkerGrotesque-semibold";
+        font-family: "DarkerGrotesque-bold";
 
         @media (max-width:768px) {
             text-align: center !important;
@@ -415,25 +458,25 @@ footer {
     background-color: #535a62;
 
     .footer-upper {
-        font-size: 22px; 
+        font-size: 22px;
         color: whitesmoke;
         text-transform: uppercase;
-        font-family: "DarkerGrotesque-regular"; 
+        font-family: "DarkerGrotesque-regular";
     }
 
     .footer-link {
-        text-transform: capitalize; 
+        text-transform: capitalize;
         font-family: "DarkerGrotesque-regular";
         justify-content: space-around;
         padding-left: 0;
-         
+
 
         li {
             list-style: none;
         }
 
 
-        a {  
+        a {
             color: #d5d5d5;
             font-size: 20px;
 
@@ -443,7 +486,7 @@ footer {
         }
     }
 
-   
+
 }
 
 .footer-bottom {
@@ -468,6 +511,7 @@ footer {
                 font-size: 22px;
                 display: flex;
                 align-items: center;
+
                 &:hover {
                     color: $secondary;
                 }
@@ -549,13 +593,13 @@ footer {
 }
 
 .why-donors {
-    @extend .help;
+    @extend .campaign;
     background: #E3DDD8 !important;
 }
 
 .faq {
     @extend .client;
-    background: #DACFC2 !important;
+    background: #eaf4ff70 !important;
 }
 
 #faqAccordion {
@@ -573,11 +617,11 @@ footer {
         margin-bottom: 12px;
 
         .accordion-button {
-            font-size: 40px;
-            color: #18988B;
-            font-family: "DarkerGrotesque-bold";
-            padding: 0.8rem 1.25rem;
-            background-color: #E8E1D9;
+            font-size: 25px;
+    color: #11517d;
+    font-family: "DarkerGrotesque-bold";
+    padding: 0.8rem 1.25rem;
+    background-color: #E8E1D9;
 
             @media (max-width:768px) {
 
@@ -754,7 +798,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .auth {
-    background: #FBF3ED;
+    background: #EAE4DF;
 
     .title {
         font-size: 40px;
@@ -856,4 +900,111 @@ body::-webkit-scrollbar-thumb {
             width: 25px;
         }
     }
+}
+
+.authBox {
+    border-radius: 22px;
+    background: #fff5ed;
+    padding: 25px;
+    border: 1px solid #ebebeb;
+}
+
+.card-theme {
+    background-color: #c7beb6;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .topper {
+        height: 145px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(https://via.placeholder.com/315x150.png);
+
+        img {
+            position: absolute;
+            right: 20px;
+            bottom: -50px;
+            z-index: 1;
+            border: 4px solid #ffffffad;
+        }
+    }
+
+    .card-body {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        background-color: #F8F6F3;
+
+        .card-title {
+            font-size: 25px;
+            line-height: 1;
+            color: #265080;
+            font-family: "DarkerGrotesque-bold";
+        }
+
+        span {
+            font-size: 18px;
+            color: #242222;
+
+            &:nth-child(1) {
+                font-family: "DarkerGrotesque-semibold";
+            }
+        }
+
+        img {}
+    }
+}
+
+.about-card {
+    background: #fff1e6;
+    padding: 35px 25px;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: "Roboto-Regular";
+    color: #4E4B44;
+
+    &:hover {
+        background: #f9f9f9;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+
+    .title {
+        margin: 15px 0;
+        font-size: 25px;
+        line-height: 1;
+        color: #265080;
+        font-family: "DarkerGrotesque-bold";
+    }
+
+    .para {
+        font-size: 18px;
+        color: #242222;
+    }
+}
+
+.title{
+    font-size: 3.9rem;
+    text-align: center;
+    line-height: 1;
+    color: #265080;
+    font-family: "DarkerGrotesque-bold";
+}
+
+.para {
+    font-size: 20px;
+    font-family: "Roboto-Regular"; 
+}
+
+.paratitle {
+    font-size: 35px;
+    line-height: 1;
+    color: $secondary;
+    margin-bottom: 15px;
+    font-family: "DarkerGrotesque-bold";
 }
