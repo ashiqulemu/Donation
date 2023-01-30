@@ -810,10 +810,36 @@ body::-webkit-scrollbar-thumb {
 }
 .card-theme .card-body span {
   font-size: 18px;
-  color: #242222;
-}
-.card-theme .card-body span:nth-child(1) {
+  color: #4a4949;
   font-family: "DarkerGrotesque-semibold";
+}
+.card-theme:hover .topper img {
+  -webkit-animation: bounce 0.8s linear;
+          animation: bounce 0.8s linear;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: -50px;
+  }
+  50% {
+    bottom: -60px;
+  }
+  100% {
+    bottom: -50px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: -50px;
+  }
+  50% {
+    bottom: -60px;
+  }
+  100% {
+    bottom: -50px;
+  }
 }
 .about-card {
   background: #fff1e6;
@@ -863,4 +889,43 @@ body::-webkit-scrollbar-thumb {
   color: #F0BD57;
   margin-bottom: 15px;
   font-family: "DarkerGrotesque-bold";
+}
+
+.searchBox {
+  width: 40%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 19px;
+  display: flex;
+  justify-content: space-between;
+}
+.searchBox input {
+  height: 45px;
+  width: -webkit-fill-available;
+  border: 0;
+  padding: 0 35px 0 15px;
+  outline: none;
+  font-weight: 900;
+  font-size: 19px;
+  padding-bottom: 5px;
+  letter-spacing: 1px;
+  color: #265080;
+}
+.searchBox button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  border: 0;
+  background: #F0BD57;
+  color: #fff;
+}
+.searchBox button iconify-icon {
+  font-size: 1.4rem;
+}
+.searchBox:hover iconify-icon {
+  color: #F0BD57;
+}
+.searchBox:hover button {
+  background-color: #265080;
 }/*# sourceMappingURL=app.css.map */

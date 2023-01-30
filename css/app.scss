@@ -173,7 +173,7 @@ a {
 // font classes 
 
 
-.how-we-works{
+.how-we-works {
     background: #FFF7F2;
 }
 
@@ -618,10 +618,10 @@ footer {
 
         .accordion-button {
             font-size: 25px;
-    color: #11517d;
-    font-family: "DarkerGrotesque-bold";
-    padding: 0.8rem 1.25rem;
-    background-color: #E8E1D9;
+            color: #11517d;
+            font-family: "DarkerGrotesque-bold";
+            padding: 0.8rem 1.25rem;
+            background-color: #E8E1D9;
 
             @media (max-width:768px) {
 
@@ -920,7 +920,7 @@ body::-webkit-scrollbar-thumb {
         background-size: cover;
         background-repeat: no-repeat;
         background-image: url(https://via.placeholder.com/315x150.png);
-
+        
         img {
             position: absolute;
             right: 20px;
@@ -944,15 +944,29 @@ body::-webkit-scrollbar-thumb {
 
         span {
             font-size: 18px;
-            color: #242222;
+            color: #4a4949; font-family: "DarkerGrotesque-semibold";
 
-            &:nth-child(1) {
-                font-family: "DarkerGrotesque-semibold";
-            }
+            
         }
 
         img {}
     }
+    &:hover{
+        .topper{
+           img{
+              animation: bounce 0.8s linear;
+           }
+        }
+    }
+}
+
+
+@keyframes bounce {
+   0%{
+   bottom: -50px;
+   } 
+   50%{ bottom: -60px;} 
+   100%{bottom: -50px;} 
 }
 
 .about-card {
@@ -988,7 +1002,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.title{
+.title {
     font-size: 3.9rem;
     text-align: center;
     line-height: 1;
@@ -998,7 +1012,7 @@ body::-webkit-scrollbar-thumb {
 
 .para {
     font-size: 20px;
-    font-family: "Roboto-Regular"; 
+    font-family: "Roboto-Regular";
 }
 
 .paratitle {
@@ -1007,4 +1021,48 @@ body::-webkit-scrollbar-thumb {
     color: $secondary;
     margin-bottom: 15px;
     font-family: "DarkerGrotesque-bold";
+}
+
+.searchBox {
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        height: 45px;
+        width: -webkit-fill-available;
+        border: 0;
+        padding: 0 35px 0 15px;
+        outline: none;
+        font-weight: 900;
+        font-size: 19px;
+        padding-bottom: 5px;
+        letter-spacing: 1px;
+        color: $primary;
+    }
+
+    button {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    border: 0;
+    background: $secondary;
+    color: #fff;
+ 
+        iconify-icon {
+            font-size: 1.4rem; 
+        }
+    }
+    &:hover{ 
+        iconify-icon{
+            color: $secondary;
+        }
+        button{
+            background-color: $primary;
+        }
+    }
 }
