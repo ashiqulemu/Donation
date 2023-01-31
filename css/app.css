@@ -937,4 +937,41 @@ body::-webkit-scrollbar-thumb {
 
 #searchFundrisers .searchResult {
   display: flex;
+}
+
+.fundriser {
+  padding-top: 90px;
+}
+.fundriser .inner {
+  background: #fff7f2;
+  border-radius: 90px 90px 0 0;
+  padding: 90px 16px;
+  border: 1px solid #e9e9e9;
+}
+.fundriser .inner label {
+  color: #11517d;
+}
+.fundriser .inner .nav-item .nav-link {
+  cursor: pointer;
+  border: 1px solid grey;
+  text-align: center;
+  background: #fff;
+  color: #000;
+  height: 85px;
+  width: 210px;
+  border-radius: 9px !important;
+  border: 1px solid lightgrey !important;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .fundriser .inner .nav-item .nav-link {
+    width: 100% !important;
+  }
+}
+.fundriser .inner .tab-content {
+  padding: 0 16px;
+  margin: 0 9px;
+  background: white;
+  border-radius: 9px;
+  padding: 25px;
 }/*# sourceMappingURL=app.css.map */
