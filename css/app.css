@@ -928,4 +928,8 @@ body::-webkit-scrollbar-thumb {
 }
 .searchBox:hover button {
   background-color: #265080;
+}
+
+#searchFundrisers .searchResult {
+  display: flex;
 }/*# sourceMappingURL=app.css.map */
