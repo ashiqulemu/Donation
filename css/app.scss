@@ -293,7 +293,7 @@ body {
 }
 
 .campaign {
-    background: #E1D8CE;
+    background: #c9beb7;
 
 
 
@@ -726,7 +726,7 @@ body::-webkit-scrollbar-thumb {
     .form-control {
         background-color: #fff;
         font-family: "DarkerGrotesque-semibold";
-        border-radius: 7px;
+        border-radius:0;
         margin: 15px 0;
         min-height: 43px;
         border: 0;
@@ -902,19 +902,16 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-.authBox {
-    border-radius: 22px;
-    background: #fff5ed;
-    padding: 25px;
-    border: 1px solid #ebebeb;
+.authBox { 
+    background: #EBE4DF;
+    padding: 25px; 
+    box-shadow: 0px 2px 5px 0px #b1b1b1;
 }
 
 .card-theme {
     background-color: #c7beb6;
     padding: 0;
-    border-radius: 8px;
-    overflow: hidden;
-
+    box-shadow: 0px 2px 5px 0px #b1b1b1;
     .topper {
         height: 145px;
         background-size: cover;
@@ -930,11 +927,7 @@ body::-webkit-scrollbar-thumb {
         }
     }
 
-    .card-body {
-        border-top-right-radius: 12px;
-        border-top-left-radius: 12px;
-        background-color: #F8F6F3;
-
+    .card-body { 
         .card-title {
             font-size: 25px;
             line-height: 1;
@@ -978,13 +971,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-card {
-    background: #fff1e6;
+    background: #e3d8cf;
     padding: 35px 25px;
     border-radius: 8px;
     line-height: 1.6;
     font-size: 20px;
     font-family: "Roboto-Regular";
     color: #4E4B44;
+    box-shadow: 0px 2px 5px 0px #b1b1b1;
 
     &:hover {
         background: #f9f9f9;

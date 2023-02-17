@@ -17,11 +17,11 @@
 
 @media (min-width: 1400px) {
   .container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1170px;
   }
 }
@@ -225,7 +225,7 @@ body {
 }
 
 .campaign, .why-donors {
-  background: #E1D8CE;
+  background: #c9beb7;
 }
 .campaign .title, .why-donors .title {
   font-size: 3.9rem;
@@ -607,7 +607,7 @@ body::-webkit-scrollbar-thumb {
 .form-custom .form-control {
   background-color: #fff;
   font-family: "DarkerGrotesque-semibold";
-  border-radius: 7px;
+  border-radius: 0;
   margin: 15px 0;
   min-height: 43px;
   border: 0;
@@ -772,17 +772,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .authBox {
-  border-radius: 22px;
-  background: #fff5ed;
+  background: #EBE4DF;
   padding: 25px;
-  border: 1px solid #ebebeb;
+  box-shadow: 0px 2px 5px 0px #b1b1b1;
 }
 
 .card-theme {
   background-color: #c7beb6;
   padding: 0;
-  border-radius: 8px;
-  overflow: hidden;
+  box-shadow: 0px 2px 5px 0px #b1b1b1;
 }
 .card-theme .topper {
   height: 145px;
@@ -797,11 +795,6 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   border: 4px solid rgba(255, 255, 255, 0.6784313725);
 }
-.card-theme .card-body {
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
-  background-color: #F8F6F3;
-}
 .card-theme .card-body .card-title {
   font-size: 25px;
   line-height: 1;
@@ -814,20 +807,7 @@ body::-webkit-scrollbar-thumb {
   font-family: "DarkerGrotesque-semibold";
 }
 .card-theme:hover .topper img {
-  -webkit-animation: bounce 0.8s linear;
-          animation: bounce 0.8s linear;
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    bottom: -50px;
-  }
-  50% {
-    bottom: -60px;
-  }
-  100% {
-    bottom: -50px;
-  }
+  animation: bounce 0.8s linear;
 }
 
 @keyframes bounce {
@@ -842,13 +822,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .about-card {
-  background: #fff1e6;
+  background: #e3d8cf;
   padding: 35px 25px;
   border-radius: 8px;
   line-height: 1.6;
   font-size: 20px;
   font-family: "Roboto-Regular";
   color: #4E4B44;
+  box-shadow: 0px 2px 5px 0px #b1b1b1;
 }
 .about-card:hover {
   background: #f9f9f9;
