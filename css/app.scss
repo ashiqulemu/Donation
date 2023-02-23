@@ -194,7 +194,10 @@ body {
 
 .siteHeader {
 
-    background: #fff7f1;
+    background: #fff7f1; 
+    box-shadow: -8px -4px 7px grey;
+    overflow: visible;
+    z-index: 1;
 
     .navCustom {
         .nav-link {
@@ -203,6 +206,7 @@ body {
             }
 
             font-size: 24px;
+            font-family: "DarkerGrotesque-semibold";
             margin: 0 10px;
             color:#172158;
 
@@ -224,7 +228,7 @@ body {
 
                 .dropdown-item {
                     font-size: 22px !important;
-
+                    font-family: "DarkerGrotesque-semibold";
                     &:hover {
                         background: $secondary;
                         color: white;
@@ -293,8 +297,8 @@ body {
 }
 
 .campaign {
-    background: #c9beb7;
-
+    background: #fff7f2;
+    border-bottom: 1px solid  #d3d3d359;
 
 
     .title {
@@ -455,13 +459,14 @@ body {
 }
 
 footer {
-    background-color: #535a62;
-
+    background-color: #fff7f2;
+    font-family: "DarkerGrotesque-semibold";
     .footer-upper {
         font-size: 22px;
-        color: whitesmoke;
+        color: #11517d;
         text-transform: uppercase;
         font-family: "DarkerGrotesque-regular";
+        font-weight: 600;
     }
 
     .footer-link {
@@ -477,11 +482,11 @@ footer {
 
 
         a {
-            color: #d5d5d5;
-            font-size: 20px;
-
+            color: #080808;
+            font-size: 20px;  
+            font-family: "DarkerGrotesque-semibold";
             &:hover {
-                color: #fff;
+                color: $secondary;
             }
         }
     }
@@ -492,7 +497,7 @@ footer {
 .footer-bottom {
     background: #EAE4DF;
     font-size: 19px;
-
+    font-family: "DarkerGrotesque-semibold";
     .social {
         display: flex;
         margin-bottom: 0;
@@ -699,7 +704,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact {
-    background-color: #E3DDD8;
+    background-color: #fff7f2;
 
     .title {
         font-size: 80px;
@@ -732,11 +737,18 @@ body::-webkit-scrollbar-thumb {
         border: 0;
         font-size: 19px;
         color: #003057;
+        border: 1px solid #ebe1e1;
+        box-shadow: 0;
+        outline: 0;
+        &:focus{
+            box-shadow:none ;
+            border-color: grey;
+        }
     }
 }
 
 .contactInfo {
-    background: #DACFC2;
+    background: #fff4e7;
 
     .paratitle {
         font-size: 40px;
@@ -908,8 +920,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 2px 5px 0px #b1b1b1;
 }
 
-.card-theme {
-    background-color: #c7beb6;
+.card-theme { 
     padding: 0;
     box-shadow: 0px 2px 5px 0px #b1b1b1;
     .topper {
