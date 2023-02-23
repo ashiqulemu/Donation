@@ -231,7 +231,6 @@ body {
 
 .campaign, .why-donors {
   background: #fff7f2;
-  border-bottom: 1px solid rgba(211, 211, 211, 0.3490196078);
 }
 .campaign .title, .why-donors .title {
   font-size: 3.9rem;
@@ -380,6 +379,7 @@ body {
 footer {
   background-color: #fff7f2;
   font-family: "DarkerGrotesque-semibold";
+  border-top: 1px solid rgba(211, 211, 211, 0.3490196078);
 }
 footer .footer-upper {
   font-size: 22px;
