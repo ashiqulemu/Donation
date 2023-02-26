@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- FOR SEO -->
+    <!-- <meta property='og:title' content='MarinOne soft'/>
+    <meta property='og:image' content='./assets/images/link.jpg'/> 
+    <meta property='og:description' content='DESCRIPTION OF YOUR SITE'/>
+    <meta property='og:url' content='URL OF YOUR WEBSITE'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website'/> -->
+
+    <title>Donation - campaign</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap-5.1.3min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" /> -->
+</head>
+
+<body>
+    <!-- oncontextmenu="return false;" -->
+
+    <section class="siteHeader ">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light py-0 ">
+                    <a class="navbar-brand" href="/">
+                        <img src="./images/logo.png" class="py-2 img-fluid mx-auto" width="200px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto navCustom">
+                            <!-- "me-auto" for left align | "ms-auto" for right align | "mx-auto" for center align--->
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./how-we-works.html">how we works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdownItem" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    Fundraisers
+                                </a>
+                                <ul class="dropdown-menu border-0 shadow-lg " aria-labelledby="dropdownItem">
+                                    <li><a class="dropdown-item" href="non-profit.html">Non Profit</a></li>
+                                    <li><a class="dropdown-item" href="for-individual.html">For Individual</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdownItem"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="https://via.placeholder.com/510x440.png" class="img-fluid mx-auto rounded"  width="45px"/>
+                                    <span class="ms-2"> my account </span>
+                                </a>
+                                <ul class="dropdown-menu border-0 shadow-lg " aria-labelledby="dropdownItem">
+                                    <li><a class="dropdown-item" href="/index.html">Your campaign </a></li>
+                                    <li><a class="dropdown-item" href="/fundriser.html">Start fundrising</a></li>
+                                    <li><a class="dropdown-item" href="/user-profile.html#update-profile">account settings</a></li>
+                                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+        </div>
+    </section>
+
+  
+
+
+    <section class="campaign default">
+        <div class="container">
+            <div class="row">
+               <div class="col-lg-8">
+                <h2 class="fw-bold darkerGrotesque-bold txt-primary mb-3"> Your All Transactions</h2>
+               </div>
+               <div class="col-lg-4 d-flex align-items-center fs-5">
+                    <input type="text"  class="form-control fs-5" style="height: 46px;"placeholder="Search">
+                    <button class="btn btn-theme bg-primary">Searech</button>
+               </div>
+            </div>
+            <div class="row ">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs mt-4 justify-content-start fs-5" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="transaction-tab" data-bs-toggle="tab" data-bs-target="#transaction" type="button" role="tab" aria-controls="transaction" aria-selected="true">All transaction</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="moneyIn-tab" data-bs-toggle="tab" data-bs-target="#moneyIn" type="button" role="tab" aria-controls="moneyIn" aria-selected="false">Money
+                                in</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="moneyOut-tab" data-bs-toggle="tab" data-bs-target="#moneyOut" type="button" role="tab" aria-controls="moneyOut" aria-selected="false">Money out</button>
+                        </li>
+                        
+                    </ul>
+                    <div class="tab-content fs-5" id="myTabContent">
+                        <div class="tab-pane fade active show" id="transaction" role="tabpanel" aria-labelledby="transaction-tab">
+                            <div class="table-responsive bg-white px-4">
+                                  <table class="table table-theme mt-4 table-striped">
+                                <thead>
+                                    <tr> 
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Description</th>
+                                        <th scope="col">Amount</th>
+                                        <th scope="col">Comments</th>
+                                        <th scope="col">Reference/Voucher no.</th>
+                                        <th scope="col">Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody  >
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">23/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Aim Habonim</span>
+                                                <span class="fs-16 txt-primary">Online donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 7.18393C9.96315 7.08574 9.84339 7.03085 9.71876 7.03085C9.59413 7.03085 9.47438 7.08574 9.38478 7.18393L5.96876 11.0621V0.656192C5.96876 0.515295 5.91938 0.380169 5.83147 0.28054C5.74356 0.180912 5.62433 0.124942 5.50001 0.124942C5.37569 0.124942 5.25646 0.180912 5.16856 0.28054C5.08065 0.380169 5.03126 0.515295 5.03126 0.656192V11.0621L1.61525 7.18393C1.52417 7.09921 1.40855 7.05592 1.29087 7.06247C1.17319 7.06902 1.06186 7.12494 0.978549 7.21937C0.895236 7.31379 0.84589 7.43995 0.84011 7.57333C0.834331 7.7067 0.87253 7.83774 0.947278 7.94096L5.16603 12.7222C5.2549 12.822 5.37493 12.8779 5.50001 12.8779C5.6251 12.8779 5.74512 12.822 5.834 12.7222L10.0527 7.94096C10.1408 7.84024 10.1901 7.7042 10.1901 7.56244C10.1901 7.42068 10.1408 7.28465 10.0527 7.18393Z" fill="#003057"></path>
+                                            </svg> 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            **Campaign** Ride4Bonim 2022 Charity ref no 490 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            1674651949-186
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -£18.00
+                                        </td> 
+                                    </tr> 
+                                    <tr> 
+                                        <td class="fs-16 txt-primary">22/08/2022</td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-20 txt-primary fw-bold">Initact Solutions Ltd</span>
+                                                <span class="fs-16 txt-primary">Company donation</span>
+                                            </div>
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                            <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0527 5.89619C9.96315 5.98283 9.84339 6.03126 9.71876 6.03126C9.59413 6.03126 9.47438 5.98283 9.38478 5.89619L5.96876 2.47432V11.656C5.96876 11.7803 5.91938 11.8995 5.83147 11.9874C5.74356 12.0753 5.62433 12.1247 5.50001 12.1247C5.37569 12.1247 5.25646 12.0753 5.16856 11.9874C5.08065 11.8995 5.03126 11.7803 5.03126 11.656V2.47432L1.61525 5.89619C1.52417 5.97094 1.40855 6.00914 1.29087 6.00336C1.17319 5.99758 1.06186 5.94823 0.978549 5.86492C0.895236 5.78161 0.84589 5.67028 0.84011 5.5526C0.834331 5.43492 0.87253 5.3193 0.947278 5.22822L5.16603 1.00947C5.2549 0.92145 5.37493 0.87207 5.50001 0.87207C5.6251 0.87207 5.74512 0.92145 5.834 1.00947L10.0527 5.22822C10.1408 5.31709 10.1901 5.43712 10.1901 5.56221C10.1901 5.68729 10.1408 5.80732 10.0527 5.89619Z" fill="#18988B"></path>
+                                                </svg>
+                                                 
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            None
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            -
+                                        </td>
+                                        <td class="fs-16 txt-primary">
+                                            £20.00
+                                        </td> 
+                                    </tr> 
+                                </tbody>
+                            </table>
+                            </div>
+                          
+                        </div>
+                        <div class="tab-pane fade" id="moneyIn" role="tabpanel" aria-labelledby="moneyIn-tab">...
+                        </div>
+                        <div class="tab-pane fade" id="moneyOut" role="tabpanel" aria-labelledby="moneyOut-tab">...
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer class="pt-3">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-6 col-md-3 mb-3">
+                    <h5 class="footer-upper"> </h5>
+                    <ul class="footer-link">
+                        <li class="mb-2"><a href="#" class="">Home</a></li>
+                        <li class="mb-2"><a href="#" class="">Features</a></li>
+                        <li class="mb-2"><a href="#" class="">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <h5 class="footer-upper">Contact</h5>
+                    <big>
+                        Phone: 07490 956 227
+                    </big> <br>
+                    <big>
+                        Whatsapp: 07490 956 227
+                    </big><br>
+                    <big>
+                        Email: admin@admin.com
+                    </big><br>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <form>
+                        <h4 class="txt-secondary fw-bold">Subscribe to our newsletter</h4>
+                        <p class="mb-0">Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn bg-primary text-white" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-2">
+                    <small class="mb-0 text-dark  ">© 2022 Company, Inc. All rights reserved.</small>
+                    <ul class="social">
+                        <li><a href=""><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon icon="mdi:twitter"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon icon="mdi:pinterest"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon icon="mdi:linkedin"></iconify-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap-5.bundle.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/iconify.min.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
+    <!-- <script src="./js/slick.min.js" type="text/javascript"></script> -->
+
+    <script>
+        for (var i = 0; i < document.links.length; i++) {
+            if (document.links[i].href === document.URL) {
+                document.links[i].className = 'nav-link current';
+            }
+        }
+    </script>
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                callbacks: {
+                    elementParse: function (item) {
+                        console.log(item.el.context.className);
+                        if (item.el.context.className == 'video') {
+                            item.type = 'iframe',
+                                item.iframe = {
+                                    patterns: {
+                                        youtube: {
+                                            index: 'youtube.com/',
+
+                                            id: 'v=',
+                                            src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+                                        },
+                                        vimeo: {
+                                            index: 'vimeo.com/',
+                                            id: '/',
+                                            src: '//player.vimeo.com/video/%id%?autoplay=1'
+                                        },
+                                        gmaps: {
+                                            index: '//maps.google.',
+                                            src: '%id%&output=embed'
+                                        }
+                                    }
+                                }
+                        } else {
+                            item.type = 'image',
+                                item.tLoading = 'Loading image #%curr%...',
+                                item.mainClass = 'mfp-img-mobile',
+                                item.image = {
+                                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+                                }
+                        }
+
+                    }
+                },
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1]
+                }
+
+            });
+
+        });
+    </script>
+
+    <!--  <script>
+        document.onkeydown = function(e) {
+          if (e.ctrlKey && e.keyCode === 85) { 
+             alert("you cant get my code ever :)");
+             return false;
+          }
+        };
+       </script> -->
+
+</body>
+
+</html>

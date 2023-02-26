@@ -75,9 +75,7 @@
                                     <li><a class="dropdown-item" href="/user-profile.html#update-profile">account settings</a></li>
                                     <li><a class="dropdown-item" href="#">Sign Out</a></li>
                                 </ul>
-                            </li>
-
-
+                            </li> 
                         </ul>
                     </div>
 
@@ -108,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-lg-12 mb-4 mt-5">
-                    <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-3">Active Recurring Donations</h3>
+                    <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-3">Your all Donation Record</h3>
                     <div class="table-responsive fs-5 shadow-sm  ">
                         <table class="table table-striped">
                             <thead>
@@ -187,7 +185,7 @@
                 <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-3">Create Campaign</h3>
             </div>
             <div class="row">
-                <div class="col-lg-12 fs-5 shadow-sm p-4">
+                <div class="col-lg-12 fs-5 shadow-sm p-4 border">
                     <div class="row darkerGrotesque-semibold">
                         <div class="col-lg-6 ">
                             <div class="form-group mb-3">
@@ -259,7 +257,7 @@
                                         <a href="#" class="px-2">
                                             <iconify-icon class="txt-primary" icon="mdi:pencil-outline"></iconify-icon>
                                         </a>
-                                        <a href="/index.html" class="px-2">
+                                        <a href="/user-transaction.html" class="px-2" title="view all transaction">
                                             <iconify-icon icon="ic:outline-remove-red-eye"></iconify-icon>
                                         </a>
                                         <a href="#" class="px-2">
@@ -283,45 +281,75 @@
                 <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-3">Update Profile</h3>
             </div>
             <div class="row">
-                <div class="col-lg-12 fs-5 shadow-sm p-4">
+                <div class="col-lg-12 fs-5 shadow-sm p-4 border">
                     <div class="row darkerGrotesque-semibold">
-                        <div class="col-lg-6 ">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="First Name">
+                        <div class="col-lg-10">
+                            <div class="row">
+                                <div class="col-lg-4 ">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Surname">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Phone">
+                                    </div> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="email" placeholder="Email">
+                                    </div> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="House number">
+                                    </div> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Street">
+                                    </div> 
+                                </div>
+                                <!-- <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Address">
+                                    </div> 
+                                </div> -->
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Town">
+                                    </div> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Post code">
+                                    </div> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Password">
+                                    </div> 
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <input class="form-control fs-5" type="text" placeholder="Confirm Password">
+                                    </div> 
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Last name">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Email">
-                            </div> 
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Contact">
-                            </div> 
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Address">
-                            </div> 
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="City">
-                            </div> 
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <p class="mb-1">Change profile Photo</p>
+                        <div class="col-lg-2">
+                            <div class="form-group mb-3 text-center">
+                                <img src="https://via.placeholder.com/510x440.png" class="img-fluid mb-2 mx-auto rounded " width="120px" alt="">
+                                <p class="mb-1 text-start">Change profile Photo</p>
                                 <input class="form-control fs-5" type="file">
                             </div>
                         </div>
+                       
                         
                         <div class="col-lg-12 mt-3">
                             <div class="form-group">
@@ -368,7 +396,7 @@
                 <div class="col-6 col-md-3 mb-3">
                     <form>
                         <h4 class="txt-secondary fw-bold">Subscribe to our newsletter</h4>
-                        <p class="text-white">Monthly digest of what's new and exciting from us.</p>
+                        <p class="mb-0">Monthly digest of what's new and exciting from us.</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">

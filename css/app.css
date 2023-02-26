@@ -583,6 +583,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
+  background: #fff;
 }
 #myTab .nav-link {
   border-radius: 0;
@@ -979,13 +980,28 @@ body::-webkit-scrollbar-thumb {
 .popup-gallery {
   display: flex;
   gap: 10px;
+  height: 350px;
+  justify-content: center;
 }
 .popup-gallery a {
+  overflow: hidden;
   flex: 1;
   flex-wrap: wrap;
 }
 .popup-gallery img {
-  width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 3px;
+}
+
+.sideCard {
+  max-height: 490px;
+  overflow-x: hidden;
+}
+.sideCard::-webkit-scrollbar {
+  background-color: #fefefe;
+  width: 7px;
+}
+.sideCard::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: lightgrey;
 }/*# sourceMappingURL=app.css.map */
