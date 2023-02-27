@@ -1004,4 +1004,15 @@ body::-webkit-scrollbar-thumb {
 .sideCard::-webkit-scrollbar-thumb {
   border-radius: 50px;
   background: lightgrey;
+}
+
+.shareIcons {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0px;
+  flex-wrap: wrap;
+}
+.shareIcons .items {
+  flex: 1;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=app.css.map */
