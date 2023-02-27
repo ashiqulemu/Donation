@@ -65,13 +65,17 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdownItem"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://via.placeholder.com/510x440.png" class="img-fluid mx-auto rounded"  width="45px"/>
+                                    <img src="https://via.placeholder.com/510x440.png" class="img-fluid  rounded"  width="45px"/>
                                     <span class="ms-2"> my account </span>
                                 </a>
                                 <ul class="dropdown-menu border-0 shadow-lg " aria-labelledby="dropdownItem">
-                                    <li><a class="dropdown-item" href="/index.html">Your campaign </a></li>
-                                    <li><a class="dropdown-item" href="/fundriser.html">Start fundrising</a></li>
-                                    <li><a class="dropdown-item" href="/user-profile.html#update-profile">account settings</a></li>
+                                    <li><a class="dropdown-item" href="/user-campaign.html">Your campaign </a></li>
+                                    <li><a class="dropdown-item" href="/user-donation.html">Donation you have made</a></li>
+                                    <li><a class="dropdown-item" href="/fundriser.html">Start a new fundrising</a></li>
+                                    <li><a class="dropdown-item" href="/user-statements.html">All Statements</a></li>
+                                    <li><a class="dropdown-item" href="/user-profile.html">account
+                                            settings</a>
+                                        </li>
                                     <li><a class="dropdown-item" href="#">Sign Out</a></li>
                                 </ul>
                             </li> 
@@ -243,44 +247,56 @@
 
     <footer class="pt-3">
         <div class="container">
-            <div class="row py-4">
-                <div class="col-6 col-md-3 mb-3">
-                    <h5 class="footer-upper"> </h5>
-                    <ul class="footer-link">
-                        <li class="mb-2"><a href="#" class="">Home</a></li>
-                        <li class="mb-2"><a href="#" class="">Features</a></li>
-                        <li class="mb-2"><a href="#" class="">Pricing</a></li>
-                        <li class="mb-2"><a href="#" class="">FAQs</a></li>
-                        <li class="mb-2"><a href="#" class="">About</a></li>
+            <div class="row py-4 fs-5">
+                <div class=" col-md-3 mb-3 ">
+                    <a href="/index.html">
+                        <img src="./images/logo.png" width="200px">
+                    </a>
+                    <p class="fw-bold my-3 darkerGrotesque-bold lh-1">Lorem ipsum dolor sit amet consectetur </p>
+                    <p class="text-muted mb-1 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                        similique libero magni.</p>
+
+                </div>
+                <div class=" col-md-3 mb-3">
+                    <ul class="footer-link ">
+                        <li class="mb-2"><a href="index.html" class=""> 
+                            <iconify-icon   class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Home</a></li>
+                        <li class="mb-2"><a href="how-we-works.html" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> How we works</a></li>
+                        <li class="mb-2"><a href="about.html" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> About</a></li>
+                        <li class="mb-2"><a href="how-we-works.html#faq" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> FAQs</a></li>
+                        <li class="mb-2"><a href="#" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Start fundrising</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="terms.html" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Terms & conditions</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <h5 class="footer-upper">Contact</h5>
-                    <big>
-                        Phone: 07490 956 227
-                    </big> <br>
-                    <big>
-                        Whatsapp:   07490 956 227
-                    </big><br>
-                    <big>
-                        Email: admin@admin.com
-                    </big><br> 
+                <div class=" col-md-3 mb-3">
+                    <h4 class="txt-primary fw-bold mb-3 darkerGrotesque-semibold">Contact</h4>
+                    <p class="mb-1 darkerGrotesque-semibold "><iconify-icon class="txt-primary"
+                            icon="ic:baseline-local-phone"></iconify-icon> Phone: 07490 956 227</p>
+                    <p class="mb-1 darkerGrotesque-semibold "><iconify-icon class="txt-primary"
+                            icon="tabler:brand-whatsapp"></iconify-icon> Whatsapp: 07490 956 227 </p>
+                    <p class="mb-1 darkerGrotesque-semibold "><iconify-icon class="txt-primary"
+                            icon="ic:outline-email"></iconify-icon> Email: admin@admin.com</p>
                 </div>
-                <div class="col-6 col-md-3 mb-3">
-                     
-                </div>
-                <div class="col-6 col-md-3 mb-3">
+                <div class=" col-md-3 mb-3">
                     <form>
-                        <h4 class="txt-secondary fw-bold">Subscribe to our newsletter</h4> 
-                        <p class="mb-0">Monthly digest of what's new and exciting from us.</p>
-                      <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                        <label for="newsletter1" class="visually-hidden">Email address</label>
-                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                        <button class="btn bg-primary text-white" type="button">Subscribe</button>
-                      </div>
+                        <h4 class="txt-primary fw-bold mb-3 darkerGrotesque-semibold">Subscribe to our newsletter</h4>
+                        <p class=" lh-1 mb-3">Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn bg-primary text-white" type="button">Subscribe</button>
+                        </div>
                     </form>
-                  </div>
-               
+                </div>
+
 
             </div>
         </div>
@@ -291,10 +307,11 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-2">
                     <small class="mb-0 text-dark  ">© 2022 Company, Inc. All rights reserved.</small>
                     <ul class="social">
-                        <li><a href=""><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a></li>
-                        <li><a href=""><iconify-icon icon="mdi:twitter"></iconify-icon></a></li>
-                        <li><a href=""><iconify-icon icon="mdi:pinterest"></iconify-icon></a></li>
-                        <li><a href=""><iconify-icon icon="mdi:linkedin"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="ic:baseline-facebook"></iconify-icon></a>
+                        </li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="mdi:twitter"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="mdi:pinterest"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="mdi:linkedin"></iconify-icon></a></li>
                     </ul>
                 </div>
             </div>

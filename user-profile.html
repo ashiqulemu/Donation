@@ -66,13 +66,17 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="dropdownItem"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="https://via.placeholder.com/510x440.png" class="img-fluid mx-auto rounded"  width="45px"/>
+                                    <img src="https://via.placeholder.com/510x440.png" class="img-fluid  rounded"  width="45px"/>
                                     <span class="ms-2"> my account </span>
                                 </a>
                                 <ul class="dropdown-menu border-0 shadow-lg " aria-labelledby="dropdownItem">
-                                    <li><a class="dropdown-item" href="/index.html">Your campaign </a></li>
-                                    <li><a class="dropdown-item" href="/fundriser.html">Start fundrising</a></li>
-                                    <li><a class="dropdown-item" href="/user-profile.html#update-profile">account settings</a></li>
+                                    <li><a class="dropdown-item" href="/user-campaign.html">Your campaign </a></li>
+                                    <li><a class="dropdown-item" href="/user-donation.html">Donation you have made</a></li>
+                                    <li><a class="dropdown-item" href="/fundriser.html">Start a new fundrising</a></li>
+                                    <li><a class="dropdown-item" href="/user-statements.html">All Statements</a></li>
+                                    <li><a class="dropdown-item" href="/user-profile.html">account
+                                            settings</a>
+                                        </li>
                                     <li><a class="dropdown-item" href="#">Sign Out</a></li>
                                 </ul>
                             </li> 
@@ -85,195 +89,6 @@
         </div>
     </section>
 
-    <section class="bleesed default">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-lg-2 text-center">
-                                <img src="https://via.placeholder.com/510x440.png" class="img-fluid mx-auto" />
-                            </div>
-                            <div class="col-lg-10 d-flex align-items-center">
-                                <div class="fw-bold darkerGrotesque-bold px-3 py-3 text-dark">
-                                    <h4 class="">
-                                        <span class="txt-secondary">JOHN DOE</span> <br> £3,260 scheduled
-                                    </h4>
-                                    <p class="m-0">you have <span class="txt-primary">25</span> active recurring schedule</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 mb-4 mt-5">
-                    <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-3">Your all Donation Record</h3>
-                    <div class="table-responsive fs-5 shadow-sm  ">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col"> Next payment</th>
-                                    <th scope="col">Frequincy</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Fund</th>
-                                    <th scope="col">Sub Fund</th>
-                                    <th scope="col"> payment method</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>12-12-2023</td>
-                                    <td>weekly</td>
-                                    <td>$56</td>
-                                    <td>fund purpose</td>
-                                    <td>youth</td>
-                                    <td>card or something</td>
-                                    <td class="d-flex align-items-center">
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="txt-primary" icon="mdi:pencil-outline"></iconify-icon>
-                                        </a>
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="text-danger" icon="bi:trash"></iconify-icon>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>12-12-2023</td>
-                                    <td>weekly</td>
-                                    <td>$56</td>
-                                    <td>fund purpose</td>
-                                    <td>youth</td>
-                                    <td>card or something</td>
-                                    <td class="d-flex align-items-center">
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="txt-primary" icon="mdi:pencil-outline"></iconify-icon>
-                                        </a>
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="text-danger" icon="bi:trash"></iconify-icon>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>12-12-2023</td>
-                                    <td>weekly</td>
-                                    <td>$56</td>
-                                    <td>fund purpose</td>
-                                    <td>youth</td>
-                                    <td>card or something</td>
-                                    <td class="d-flex align-items-center">
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="txt-primary" icon="mdi:pencil-outline"></iconify-icon>
-                                        </a>
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="text-danger" icon="bi:trash"></iconify-icon>
-                                        </a>
-                                    </td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="campaign default">
-        <div class="container">
-            <div class="row">
-                <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-3">Create Campaign</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 fs-5 shadow-sm p-4 border">
-                    <div class="row darkerGrotesque-semibold">
-                        <div class="col-lg-6 ">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Campaign Title">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Raised ($)">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="text" placeholder="Goal ($)">
-                            </div>
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <input class="form-control fs-5" type="date">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group mb-3">
-                                <p class="mb-1">Upload Photo</p>
-                                <input class="form-control fs-5" type="file">
-                            </div>
-                        </div>
-                        <div class="col-lg-12 mt-3">
-                            <div class="form-group">
-                                <a href="#" class="ms-0 btn-theme bg-primary">Create</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bleesed default py-5">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-lg-12 mb-4 mt-5">
-                    <h3 class="fw-bold darkerGrotesque-bold txt-primary mb-4">List of active campaign</h3>
-                    <div class="table-responsive fs-5 shadow-sm  ">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col"> Date</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Amount</th>
-                                    <th scope="col">Status</th> 
-                                    <th scope="col"> payment method</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>12-12-2023</td>
-                                    <td>lorem ipsum </td>
-                                    <td>$56</td>
-                                    <td>fund purpose</td>
-                                    <td>Active</td>
-                                    <td>card or something</td>
-                                    <td class="d-flex align-items-center">
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="txt-primary" icon="mdi:pencil-outline"></iconify-icon>
-                                        </a>
-                                        <a href="/user-transaction.html" class="px-2" title="view all transaction">
-                                            <iconify-icon icon="ic:outline-remove-red-eye"></iconify-icon>
-                                        </a>
-                                        <a href="#" class="px-2">
-                                            <iconify-icon class="text-danger" icon="bi:trash"></iconify-icon>
-                                        </a>
-                                    </td>
-                                </tr>
-                               
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="campaign default" id="update-profile">
         <div class="container">
@@ -362,41 +177,57 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
+
+ 
+
+  
 
 
     <footer class="pt-3">
         <div class="container">
-            <div class="row py-4">
-                <div class="col-6 col-md-3 mb-3">
-                    <h5 class="footer-upper"> </h5>
-                    <ul class="footer-link">
-                        <li class="mb-2"><a href="#" class="">Home</a></li>
-                        <li class="mb-2"><a href="#" class="">Features</a></li>
-                        <li class="mb-2"><a href="#" class="">Pricing</a></li>
-                        <li class="mb-2"><a href="#" class="">FAQs</a></li>
-                        <li class="mb-2"><a href="#" class="">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
-                    <h5 class="footer-upper">Contact</h5>
-                    <big>
-                        Phone: 07490 956 227
-                    </big> <br>
-                    <big>
-                        Whatsapp: 07490 956 227
-                    </big><br>
-                    <big>
-                        Email: admin@admin.com
-                    </big><br>
-                </div>
-                <div class="col-6 col-md-3 mb-3">
+            <div class="row py-4 fs-5">
+                <div class=" col-md-3 mb-3 ">
+                    <a href="/index.html">
+                        <img src="./images/logo.png" width="200px">
+                    </a>
+                    <p class="fw-bold my-3 darkerGrotesque-bold lh-1">Lorem ipsum dolor sit amet consectetur </p>
+                    <p class="text-muted mb-1 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                        similique libero magni.</p>
 
                 </div>
-                <div class="col-6 col-md-3 mb-3">
+                <div class=" col-md-3 mb-3">
+                    <ul class="footer-link ">
+                        <li class="mb-2"><a href="index.html" class=""> 
+                            <iconify-icon   class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Home</a></li>
+                        <li class="mb-2"><a href="how-we-works.html" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> How we works</a></li>
+                        <li class="mb-2"><a href="about.html" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> About</a></li>
+                        <li class="mb-2"><a href="how-we-works.html#faq" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> FAQs</a></li>
+                        <li class="mb-2"><a href="#" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Start fundrising</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="terms.html" class=""> <iconify-icon
+                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Terms & conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-md-3 mb-3">
+                    <h4 class="txt-primary fw-bold mb-3 darkerGrotesque-semibold">Contact</h4>
+                    <p class="mb-1 darkerGrotesque-semibold "><iconify-icon class="txt-primary"
+                            icon="ic:baseline-local-phone"></iconify-icon> Phone: 07490 956 227</p>
+                    <p class="mb-1 darkerGrotesque-semibold "><iconify-icon class="txt-primary"
+                            icon="tabler:brand-whatsapp"></iconify-icon> Whatsapp: 07490 956 227 </p>
+                    <p class="mb-1 darkerGrotesque-semibold "><iconify-icon class="txt-primary"
+                            icon="ic:outline-email"></iconify-icon> Email: admin@admin.com</p>
+                </div>
+                <div class=" col-md-3 mb-3">
                     <form>
-                        <h4 class="txt-secondary fw-bold">Subscribe to our newsletter</h4>
-                        <p class="mb-0">Monthly digest of what's new and exciting from us.</p>
+                        <h4 class="txt-primary fw-bold mb-3 darkerGrotesque-semibold">Subscribe to our newsletter</h4>
+                        <p class=" lh-1 mb-3">Monthly digest of what's new and exciting from us.</p>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
                             <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
@@ -415,10 +246,11 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-2">
                     <small class="mb-0 text-dark  ">© 2022 Company, Inc. All rights reserved.</small>
                     <ul class="social">
-                        <li><a href=""><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a></li>
-                        <li><a href=""><iconify-icon icon="mdi:twitter"></iconify-icon></a></li>
-                        <li><a href=""><iconify-icon icon="mdi:pinterest"></iconify-icon></a></li>
-                        <li><a href=""><iconify-icon icon="mdi:linkedin"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="ic:baseline-facebook"></iconify-icon></a>
+                        </li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="mdi:twitter"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="mdi:pinterest"></iconify-icon></a></li>
+                        <li><a href=""><iconify-icon class="txt-primary" icon="mdi:linkedin"></iconify-icon></a></li>
                     </ul>
                 </div>
             </div>
