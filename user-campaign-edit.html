@@ -70,39 +70,83 @@
                                 </a>
                                 <ul class="dropdown-menu border-0 shadow-lg " aria-labelledby="dropdownItem">
                                     <li><a class="dropdown-item" href="/user-campaign.html">Your campaign </a></li>
-                                    <li><a class="dropdown-item" href="/user-donation.html">Donation you have made</a></li>
+                                    <li><a class="dropdown-item" href="/user-donation.html">Donation you have made</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="/fundriser.html">Start a new fundrising</a></li>
-                                    <li><a class="dropdown-item" href="/user-statements.html">All Statements</a></li>
+                                    <li><a class="dropdown-item" href="/all-transaction.html">All Statements</a></li>
                                     <li><a class="dropdown-item" href="/user-profile.html">account
                                             settings</a>
-                                        </li>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">Sign Out</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </div> 
+                    </div>
+
                 </nav>
 
             </div>
         </div>
     </section>
 
-   
 
-
-    <section class="bleesed default">
+    <section class="bleesed default py-5">
         <div class="container">
-            <div class="row d-flex align-items-center justify-content-center">
-
-                <div class="title darkerGrotesque-bold">User statements</div>
-                
-
-
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold darkerGrotesque-bold txt-primary mb-3"> Update campaign</h2>
+                </div>
             </div>
+            <div class="row">
+
+                <div class="col-lg-12 mb-4 mt-4">
+                    <form action=""> 
+                    <div class="row fs-5 darkerGrotesque-semibold p-4 shadow-sm">
+
+                        <div class="col-lg-4">
+                            <label for="" class="mb-2">Campaign Title</label>
+                            <input type="text" value="lorem ipsum" class="form-control mb-3 fs-5" placeholder="">
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="" class="mb-2">Amount</label>
+                            <input type="text" class="form-control mb-3 fs-5" value="$45">
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="" class="mb-2">Payment method</label>
+                            <select class="form-control mb-3 fs-5">
+                                <option value="">card</option>
+                                <option value="">check</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="" class="mb-2">Date</label>
+                            <input type="date"  value="2023-02-28" class="form-control mb-3 fs-5" id="">
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="" class="mb-2">Active status</label>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckChecked" checked>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ">
+                            <label for="" class="mb-2">Note</label>
+                           <textarea  class="form-control mb-3"></textarea>
+                        </div>
+                        <div class="col-lg-12 mt-4">
+                            <button class="btn-theme bg-primary "> 
+                               update Campaign
+                            </button>
+                        </div>
+
+                    </div>
+                    </form>
+                   
+                </div>
+            </div>
+            
         </div>
     </section>
-
-   
 
 
     <footer class="pt-3">
@@ -119,20 +163,24 @@
                 </div>
                 <div class=" col-md-3 mb-3">
                     <ul class="footer-link ">
-                        <li class="mb-2"><a href="index.html" class=""> 
-                            <iconify-icon   class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Home</a></li>
-                        <li class="mb-2"><a href="how-we-works.html" class=""> <iconify-icon
-                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> How we works</a></li>
-                        <li class="mb-2"><a href="about.html" class=""> <iconify-icon
-                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> About</a></li>
-                        <li class="mb-2"><a href="how-we-works.html#faq" class=""> <iconify-icon
-                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> FAQs</a></li>
-                        <li class="mb-2"><a href="#" class=""> <iconify-icon
-                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Start fundrising</a>
+                        <li class="mb-2"><a href="index.html" class="">
+                                <iconify-icon class="txt-primary"
+                                    icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Home</a></li>
+                        <li class="mb-2"><a href="how-we-works.html" class=""> <iconify-icon class="txt-primary"
+                                    icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> How we works</a>
+                        </li>
+                        <li class="mb-2"><a href="about.html" class=""> <iconify-icon class="txt-primary"
+                                    icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> About</a></li>
+                        <li class="mb-2"><a href="how-we-works.html#faq" class=""> <iconify-icon class="txt-primary"
+                                    icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> FAQs</a></li>
+                        <li class="mb-2"><a href="#" class=""> <iconify-icon class="txt-primary"
+                                    icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Start
+                                fundrising</a>
                         </li>
                         <li class="mb-2">
-                            <a href="terms.html" class=""> <iconify-icon
-                                    class="txt-primary" icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Terms & conditions</a>
+                            <a href="terms.html" class=""> <iconify-icon class="txt-primary"
+                                    icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon> Terms &
+                                conditions</a>
                         </li>
                     </ul>
                 </div>

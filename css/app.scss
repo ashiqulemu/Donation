@@ -1206,3 +1206,17 @@ body::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
     }
 }
+
+.editProfile{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d7d7d7;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 2rem;
+    color: #787878;
+}
