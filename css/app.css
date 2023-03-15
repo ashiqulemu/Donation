@@ -1029,4 +1029,41 @@ body::-webkit-scrollbar-thumb {
   top: 15px;
   font-size: 2rem;
   color: #787878;
+}
+
+.authSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(../images/monitor.svg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+@media (max-width: 1230px) {
+  .authSection {
+    background-image: unset;
+    background: aliceblue;
+  }
+}
+.authSection .inner {
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+
+.login-form {
+  background: rgba(38, 80, 128, 0.0705882353);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.plan {
+  background-color: #fff7f2;
+}
+
+.advertisement {
+  background-color: #e3d4c2;
 }/*# sourceMappingURL=app.css.map */
