@@ -1078,6 +1078,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 4px;
   padding: 5px 15px;
   letter-spacing: 0.7px;
+  line-height: 1.1;
 }
 .plan .planContent .optionItems:hover {
   background-color: rgba(211, 211, 211, 0.2784313725);
