@@ -1262,7 +1262,7 @@ body::-webkit-scrollbar-thumb {
             font-size: 19px;
         font-weight: bold;
         margin-bottom: 4px;
-        padding: 5px 15px; 
+        padding: 8px 15px; 
         letter-spacing: 0.7px;
         line-height: 1;
     
@@ -1275,7 +1275,7 @@ body::-webkit-scrollbar-thumb {
                 color: #785403;
             }
             &:nth-child(even) {
-                background-color:rgb(255 231 219);
+                background-color:rgb(235 204 188);
                 border-radius: 4px;
                 color: #785403;
             }
