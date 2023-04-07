@@ -1256,15 +1256,7 @@ body::-webkit-scrollbar-thumb {
 
 .plan {
     min-height: 435px; 
-    &.plan-bg-1{
-        background:#fbeedf;
-    }
-    &.plan-bg-2{
-        background: #ffefe7;
-    }
-    &.plan-bg-3{
-        background: #fff8f0;
-    }
+   
     .planContent {
         .optionItems {
             font-size: 19px;
@@ -1272,7 +1264,7 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 4px;
         padding: 5px 15px; 
         letter-spacing: 0.7px;
-        line-height: 1.1;
+        line-height: 1;
     
         &:hover{
             background-color: #d3d3d347;
@@ -1282,7 +1274,24 @@ body::-webkit-scrollbar-thumb {
                 border-radius: 4px;
                 color: #785403;
             }
+            &:nth-child(even) {
+                background-color:rgb(255 231 219);
+                border-radius: 4px;
+                color: #785403;
+            }
         }
+    }
+    &.plan-bg-1{
+        background:#fbeedf;
+       
+    }
+    &.plan-bg-2{
+        background: #ffefe7;
+        
+    }
+    &.plan-bg-3{
+        background: #fff8f0;
+         
     }
 }
 
