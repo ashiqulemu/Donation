@@ -7,8 +7,8 @@
 
 // variables
 
-$primary: #265080;
-$secondary: #F0BD57;
+$primary: #18988B;
+$secondary: #003057 ;
 $txt: #4E4B44;
 $white: #fff;
 
@@ -1255,48 +1255,87 @@ body::-webkit-scrollbar-thumb {
 }
 
 .plan {
-    min-height: 435px; 
-   
+    min-height: 435px;
+    background: #E3D4C2;
     .planContent {
-        .optionItems {
-            font-size: 19px;
+      
+    }
+
+    .optionItems {
+        font-size: 19px;
         font-weight: bold;
         margin-bottom: 4px;
-        padding: 8px 15px; 
+        padding: 8px 15px;
         letter-spacing: 0.7px;
-        line-height: 1;
-    
-        &:hover{
-            background-color: #d3d3d347;
+        line-height: 1;  
+        &:nth-child(odd) {
+            background-color: #E8E1D9;
+            border-radius: 4px;
+            color: $secondary;
         }
-            &:nth-child(odd) {
-                background-color: rgb(231 220 214);
-                border-radius: 4px;
-                color: #785403;
-            }
-            &:nth-child(even) {
-                background-color:rgb(235 204 188);
-                border-radius: 4px;
-                color: #785403;
-            }
+
+        &:nth-child(even) {
+            background-color:rgb(243 239 235);
+            border-radius: 4px;
+            color: $secondary;
         }
     }
-    &.plan-bg-1{
-        background:#fbeedf;
+
+    // &.plan-bg-1 {
        
-    }
-    &.plan-bg-2{
-        background: #ffefe7;
-        
-    }
-    &.plan-bg-3{
-        background: #fff8f0;
-         
-    }
+
+       
+
+    // }
+
+    // &.plan-bg-2 {
+    //     background: #FFF7F2;
+    //     .optionItems {
+    //         font-size: 19px;
+    //         font-weight: bold;
+    //         margin-bottom: 4px;
+    //         padding: 8px 15px;
+    //         letter-spacing: 0.7px;
+    //         line-height: 1;  
+    //         &:nth-child(odd) {
+    //             background-color: rgb(231 220 214);
+    //             border-radius: 4px;
+    //             color: $primary;
+    //         } 
+    //         &:nth-child(even) {
+    //             background-color: rgb(235 204 188);
+    //             border-radius: 4px;
+    //             color: $primary;
+    //         }
+    //     }
+
+    // }
+
+    // &.plan-bg-3 {
+    //     background: #FFF7F2;
+    //     .optionItems {
+    //         font-size: 19px;
+    //         font-weight: bold;
+    //         margin-bottom: 4px;
+    //         padding: 8px 15px;
+    //         letter-spacing: 0.7px;
+    //         line-height: 1;  
+    //         &:nth-child(odd) {
+    //             background-color: rgb(231 220 214);
+    //             border-radius: 4px;
+    //             color: $primary;
+    //         } 
+    //         &:nth-child(even) {
+    //             background-color: rgb(235 204 188);
+    //             border-radius: 4px;
+    //             color: $primary;
+    //         }
+    //     }
+
+    // }
 }
 
 .advertisement {
     background-color: #e3d4c2;
 
 }
-
