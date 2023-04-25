@@ -1387,3 +1387,11 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+input[type=radio] {
+ height: 18px;
+ width: 18px;
+}
+input[type=checkbox] {
+ height: 18px;
+ width: 18px;
+}
