@@ -126,9 +126,16 @@
                             </div>
                             <div class="col-md-12 mt-3">
                                 <p class="para fs-6 mb-2 text-dark">This donation will be displayed in the name of
-                                    <b><span title="You can update the name here " contenteditable="true"> "Mento Software"</span></b>.
-                                    
-                                    <br>
+                                    <b>
+                                        <div class="d-inline" title="You can update the name here " id="editable">
+                                         "Mento Software"
+                                        </div>
+                                    </b> 
+                                    <button onclick="goEdit();" class="btn btn-sm bg-primary fs-6 fw-bold py-0 text-white">Edit</button>
+                                     
+                                 
+                                </p>
+                                <p class="para fs-6 mb-2 text-dark">
                                     Because LaunchGood doesn't charge a platform fee, we rely on
                                     the generosity of donors like you to continue to help more people. Thank you for
                                     including a contribution of:
@@ -478,7 +485,16 @@
         </div>
     </div>
 
+  <script>
+    
+    function goEdit(){
+        let editable = document.getElementById("editable");
+         editable.setAttribute('contenteditable','true'); 
+         editable.focus();
+         setEndOfContenteditable(editable);
+    }
 
+  </script>
 
     <script src="js/bootstrap-5.bundle.min.js"></script>
     <script src="js/iconify.min.js"></script>
