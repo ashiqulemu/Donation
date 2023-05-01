@@ -1151,6 +1151,7 @@ body::-webkit-scrollbar-thumb {
 
         label {
             color: #11517d;
+            flex:1;
         }
 
         .nav-item {
@@ -1394,4 +1395,5 @@ input[type=radio] {
 input[type=checkbox] {
  height: 18px;
  width: 18px;
+ flex-basis: 18px;
 }

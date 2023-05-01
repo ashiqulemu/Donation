@@ -973,6 +973,7 @@ body::-webkit-scrollbar-thumb {
 }
 .fundriser .inner label {
   color: #11517d;
+  flex: 1;
 }
 .fundriser .inner .nav-item .nav-link {
   cursor: pointer;
@@ -1129,4 +1130,5 @@ input[type=radio] {
 input[type=checkbox] {
   height: 18px;
   width: 18px;
+  flex-basis: 18px;
 }/*# sourceMappingURL=app.css.map */
