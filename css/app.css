@@ -1131,4 +1131,29 @@ input[type=checkbox] {
   height: 18px;
   width: 18px;
   flex-basis: 18px;
+}
+
+.input-custom {
+  height: 69px;
+  font-size: 5rem;
+  min-width: 70px;
+  max-width: 100%;
+  border: 0;
+  outline: 0;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.payMethod {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.paymentMethodNew .accordion-button:not(.collapsed) {
+  color: #18988B;
+  background-color: rgba(24, 152, 139, 0.2392156863);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+.paymentMethodNew .accordion-collapse.show {
+  background: rgba(199, 230, 227, 0.231372549);
 }/*# sourceMappingURL=app.css.map */
