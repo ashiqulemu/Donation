@@ -1144,7 +1144,7 @@ body::-webkit-scrollbar-thumb {
 
 .fundriser {
     padding-top: 50px;
-
+    background: #fff7f2;
     .inner {
         background: #fff7f2;
         padding: 45px 15px;
@@ -1594,4 +1594,7 @@ input[type=checkbox] {
     .form-container{
         position: relative;
         min-height: 60vh;
+        @media (max-width:768px) {
+            min-height: 75vh;
+        }
     }

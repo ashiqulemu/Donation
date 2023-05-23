@@ -966,6 +966,7 @@ body::-webkit-scrollbar-thumb {
 
 .fundriser {
   padding-top: 50px;
+  background: #fff7f2;
 }
 .fundriser .inner {
   background: #fff7f2;
@@ -1324,4 +1325,9 @@ input[type=checkbox] {
 .form-container {
   position: relative;
   min-height: 60vh;
+}
+@media (max-width: 768px) {
+  .form-container {
+    min-height: 75vh;
+  }
 }/*# sourceMappingURL=app.css.map */
