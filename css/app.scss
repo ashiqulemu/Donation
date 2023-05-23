@@ -1486,8 +1486,7 @@ input[type=checkbox] {
     text-align: center;
     position: relative; 
     }
-    #msform fieldset {
-    background: white;
+    #msform fieldset { 
     border: 0 none;
     border-radius: 3px;
     box-shadow:1px 0 20px 7px rgb(0 0 0 / 5%);
@@ -1594,5 +1593,5 @@ input[type=checkbox] {
 
     .form-container{
         position: relative;
-        min-height: 380px;
+        min-height: 60vh;
     }

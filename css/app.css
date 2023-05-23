@@ -1205,7 +1205,6 @@ input[type=checkbox] {
 }
 
 #msform fieldset {
-  background: white;
   border: 0 none;
   border-radius: 3px;
   box-shadow: 1px 0 20px 7px rgba(0, 0, 0, 0.05);
@@ -1324,5 +1323,5 @@ input[type=checkbox] {
 
 .form-container {
   position: relative;
-  min-height: 380px;
+  min-height: 60vh;
 }/*# sourceMappingURL=app.css.map */
