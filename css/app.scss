@@ -278,7 +278,8 @@ body {
                     text-align: left;
                 }
             }
-        }
+        } 
+        
     }
 
     .inner {
@@ -1530,13 +1531,13 @@ input[type=checkbox] {
     border: 0 none;
     border-radius: 7px;
     padding: 10px 15px;
-    cursor: pointer; 
+    cursor: pointer;
     margin: 10px 5px;
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-   background:  $secondary;
+    background: $secondary;
 }
 
 /*headings*/
@@ -1618,5 +1619,58 @@ input[type=checkbox] {
 
     @media (max-width:768px) {
         min-height: 100vh;
+    }
+}
+
+
+// today 24-may 
+
+.show-events {
+    .event {  
+        overflow: hidden;
+        position: relative;
+
+        img {
+            height: 360px;
+             object-fit: cover; 
+            filter: brightness(0.7);
+            transition: all 0.4s ease;
+            width: 100%;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+                filter:unset;
+            }
+        }
+
+        .action {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+    }
+}
+
+
+.column-hide{
+    display: block; 
+    @media(max-width:770px){
+        display: none!important;
+    }
+}
+
+.mobile-adjust-action{
+    display: none; 
+    @media(max-width:768px){
+        display: block!important;
     }
 }

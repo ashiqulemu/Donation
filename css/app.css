@@ -1335,4 +1335,49 @@ input[type=checkbox] {
   .form-container {
     min-height: 100vh;
   }
+}
+
+.show-events .event {
+  overflow: hidden;
+  position: relative;
+}
+.show-events .event img {
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.7);
+  transition: all 0.4s ease;
+  width: 100%;
+}
+.show-events .event:hover img {
+  transform: scale(1.1);
+  filter: unset;
+}
+.show-events .event .action {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.column-hide {
+  display: block;
+}
+@media (max-width: 770px) {
+  .column-hide {
+    display: none !important;
+  }
+}
+
+.mobile-adjust-action {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-adjust-action {
+    display: block !important;
+  }
 }/*# sourceMappingURL=app.css.map */
