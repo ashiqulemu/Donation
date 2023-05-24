@@ -1223,7 +1223,8 @@ input[type=checkbox] {
 }
 
 /*inputs*/
-#msform input, #msform textarea {
+#msform input,
+#msform textarea {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -1248,7 +1249,8 @@ input[type=checkbox] {
   margin: 10px 5px;
 }
 
-#msform .action-button:hover, #msform .action-button:focus {
+#msform .action-button:hover,
+#msform .action-button:focus {
   box-shadow: 0 0 0 2px white, 0 0 0 3px #18988B;
 }
 
@@ -1307,7 +1309,8 @@ input[type=checkbox] {
   position: absolute;
   left: -50%;
   top: 9px;
-  z-index: -1; /*put it behind the numbers*/
+  z-index: -1;
+  /*put it behind the numbers*/
 }
 
 #progressbar li:first-child:after {
@@ -1317,17 +1320,19 @@ input[type=checkbox] {
 
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
-#progressbar li.active:before, #progressbar li.active:after {
+#progressbar li.active:before,
+#progressbar li.active:after {
   background: #18988B;
   color: white;
 }
 
 .form-container {
   position: relative;
-  min-height: 60vh;
+  min-height: 70vh;
+  margin-bottom: 50px;
 }
 @media (max-width: 768px) {
   .form-container {
-    min-height: 75vh;
+    min-height: 100vh;
   }
 }/*# sourceMappingURL=app.css.map */
