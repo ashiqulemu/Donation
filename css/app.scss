@@ -1528,15 +1528,15 @@ input[type=checkbox] {
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 1px;
-    cursor: pointer;
-    padding: 10px 5px;
+    border-radius: 7px;
+    padding: 10px 15px;
+    cursor: pointer; 
     margin: 10px 5px;
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px $primary;
+   background:  $secondary;
 }
 
 /*headings*/
