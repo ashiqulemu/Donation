@@ -61,6 +61,10 @@
   font-family: "DarkerGrotesque-semibold";
   src: url(../fonts/DarkerGrotesque-SemiBold.ttf);
 }
+.darkerGrotesque-regular {
+  font-family: "DarkerGrotesque-regular";
+}
+
 .darkerGrotesque-bold {
   font-family: "DarkerGrotesque-bold" !important;
 }
@@ -1380,4 +1384,22 @@ input[type=checkbox] {
   .mobile-adjust-action {
     display: block !important;
   }
+}
+
+.eventDetails {
+  background: #FFF7F2;
+}
+.eventDetails .eventBg {
+  background-image: repeating-linear-gradient(219deg, #f5ebe5, rgba(247, 232, 232, 0.6117647059) 100px);
+}
+.eventDetails .eventBg .eventBanner {
+  transform: translateY(60px);
+  height: 320px;
+}
+.eventDetails .eventBg .eventBanner img {
+  border-radius: 35px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */
