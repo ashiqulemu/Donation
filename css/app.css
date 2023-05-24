@@ -1201,7 +1201,7 @@ input[type=checkbox] {
 /*form styles*/
 #msform {
   margin: 50px auto;
-  text-align: center;
+  text-align: right;
   position: relative;
 }
 
