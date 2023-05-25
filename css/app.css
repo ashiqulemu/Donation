@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -834,6 +835,8 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   box-shadow: 0px 2px 5px 0px #b1b1b1;
   overflow: hidden;
+  margin: 0 8px;
+  border-radius: 5px;
 }
 .card-theme .topper {
   height: 240px;
@@ -858,6 +861,7 @@ body::-webkit-scrollbar-thumb {
   color: #4a4949;
   font-family: "DarkerGrotesque-semibold";
 }
+
 @keyframes bounce {
   0% {
     bottom: -50px;
@@ -1125,7 +1129,9 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
 }
 
 input[type=radio] {
@@ -1402,4 +1408,53 @@ input[type=checkbox] {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.slick-prev:before {
+  content: "⮘" !important;
+  color: #003057 !important;
+  font-size: 2rem !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out;
+}
+.slick-prev:hover:before {
+  color: #18988B !important;
+}
+
+.slick-next:before {
+  content: "⮚" !important;
+  color: #003057 !important;
+  font-size: 2rem !important;
+  opacity: 1 !important;
+  transition: all 0.3s ease-in-out;
+}
+.slick-next:hover:before {
+  color: #18988B !important;
+}
+
+.slick-prev {
+  top: -35px !important;
+  position: absolute !important;
+  right: 70px !important;
+  left: unset !important;
+}
+
+.slick-next {
+  top: -35px !important;
+  position: absolute !important;
+  right: 27px !important;
+}
+
+.slick-dots li button {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  background: #003057;
+}
+
+[role=presentation] button:before {
+  content: unset !important;
+}
+[role=presentation].slick-active button {
+  background: #18988B;
 }/*# sourceMappingURL=app.css.map */
