@@ -975,6 +975,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     margin: 0 8px;
     border-radius: 5px;
+
     .topper {
         height: 240px;
         position: relative;
@@ -999,14 +1000,14 @@ body::-webkit-scrollbar-thumb {
             }
         }
 
-         
+
 
         span {
             font-size: 18px;
             color: #4a4949;
             font-family: "DarkerGrotesque-semibold";
-        }         
-    } 
+        }
+    }
 }
 
 @keyframes bounce {
@@ -1290,7 +1291,7 @@ body::-webkit-scrollbar-thumb {
     min-height: 435px;
     background: #E3D4C2;
 
-   
+
 
     .optionItems {
         font-size: 19px;
@@ -1381,7 +1382,7 @@ input::-webkit-inner-spin-button {
 
 /* Firefox */
 input[type=number] {
-     appearance: textfield;
+    appearance: textfield;
 }
 
 input[type=radio] {
@@ -1670,9 +1671,10 @@ input[type=checkbox] {
 }
 
 .eventDetails {
-background: #FFF7F2;
+    background: #FFF7F2;
+
     .eventBg {
-        background-image:repeating-linear-gradient(219deg, #f5ebe5, rgba(247, 232, 232, 0.6117647059) 100px);
+        background-image: repeating-linear-gradient(219deg, #f5ebe5, rgba(247, 232, 232, 0.6117647059) 100px);
 
 
         .eventBanner {
@@ -1692,63 +1694,95 @@ background: #FFF7F2;
 
 // slider
 
-.slick-prev{
+.slick-prev {
     &:before {
-        content: '\2B98'!important;
-        color: $secondary!important;
-        font-size: 2rem!important;
-        opacity: 1!important; 
+        content: '\2B98' !important;
+        color: $secondary !important;
+        font-size: 2rem !important;
+        opacity: 1 !important;
         transition: all 0.3s ease-in-out;
     }
-    &:hover{
-        &:before{
-            color: $primary!important;
+
+    &:hover {
+        &:before {
+            color: $primary !important;
         }
     }
 }
-.slick-next{
+
+.slick-next {
     &:before {
-        content: '\2B9A'!important;
-        color: $secondary!important;
-        font-size: 2rem!important;
-        opacity: 1!important; 
+        content: '\2B9A' !important;
+        color: $secondary !important;
+        font-size: 2rem !important;
+        opacity: 1 !important;
         transition: all 0.3s ease-in-out;
     }
-    &:hover{
-        &:before{
-            color: $primary!important;
+
+    &:hover {
+        &:before {
+            color: $primary !important;
         }
     }
 }
 
 .slick-prev {
-    top: -35px!important;
-    position: absolute!important;
-    right: 70px!important;
-    left: unset!important;
+    top: -35px !important;
+    position: absolute !important;
+    right: 70px !important;
+    left: unset !important;
 }
 
 .slick-next {
-    top: -35px!important;
-    position: absolute!important;
-    right: 27px!important;
+    top: -35px !important;
+    position: absolute !important;
+    right: 27px !important;
 }
-.slick-dots li button {     
-    width: 8px!important;
-    height: 8px!important;
+
+.slick-dots li button {
+    width: 8px !important;
+    height: 8px !important;
     border-radius: 50%;
     background: $secondary;
 }
 
-[role="presentation"]{
-    button{        
-        &:before{
-          content: unset!important; 
+[role="presentation"] {
+    button {
+        &:before {
+            content: unset !important;
         }
     }
-    &.slick-active{
-        button{
-            background: $primary;             
+
+    &.slick-active {
+        button {
+            background: $primary;
         }
     }
+}
+
+.button-cutom-link {
+    .btn-link {
+        padding: 3px 10px;
+        margin: 0 8px 0 0;
+        border-radius: 5px;
+        font-size: 18px;
+        background: #003057;
+        color: #FFF7F2;
+        text-decoration: none;
+        transform: scale(1) !important;
+        position: relative;
+        display: inline-flex;
+        transition: transform 0.3s ease-in-out;
+        font-family: "DarkerGrotesque-semibold";
+    }
+
+    &:hover {
+        .btn-link:not(:hover) {
+            color: $primary;
+            transform: scale(1.09) !important;
+        }
+    }
+
+
+
 }
