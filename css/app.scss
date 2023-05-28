@@ -1793,19 +1793,19 @@ input[type=checkbox] {
     background: antiquewhite;
     padding: 20px;
     transition: transform 0.4s ease;
-   
+    margin-bottom: 15px;
     .numbering{
         padding: 5px;
-        border-radius: 50%;
-        background: #18988B;
         text-align: center;
-        display: flex;
-        width: 45px;
-        height: 45px;
+        display: flex; 
         justify-content: center;
         align-items: center;
         color: aliceblue;
-        margin-right: 5px;
+        margin-right: 8px; 
+        border: 1px dashed lightgrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .work-list {
         margin: 0;
