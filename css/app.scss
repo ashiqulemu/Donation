@@ -1786,3 +1786,51 @@ input[type=checkbox] {
 
 
 }
+
+.work-box {
+    width: 100%;
+    position: relative;
+    background: antiquewhite;
+    padding: 20px;
+    transition: transform 0.4s ease;
+   
+    .numbering{
+        padding: 5px;
+        border-radius: 50%;
+        background: #18988B;
+        text-align: center;
+        display: flex;
+        width: 45px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        margin-right: 5px;
+    }
+    .work-list {
+        margin: 0;
+        padding: 0; 
+        li {
+            transition: all 0.4s ease;
+            list-style: none;
+            font-size: 19px;
+            font-family: "DarkerGrotesque-medium";
+            display: flex;
+            align-items: center;
+            iconify-icon{
+                margin-right: 2px;
+                color: $primary;
+            }
+            &:hover{
+                cursor: default;
+                color: $primary; 
+                iconify-icon{ 
+                    color: $secondary;
+                } 
+            }
+        }
+    }
+    &:hover{
+        transform: translateY(-2px); 
+    }
+}

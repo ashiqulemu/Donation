@@ -1476,4 +1476,51 @@ input[type=checkbox] {
 .button-cutom-link:hover .btn-link:not(:hover) {
   color: #18988B;
   transform: scale(1.09) !important;
+}
+
+.work-box {
+  width: 100%;
+  position: relative;
+  background: antiquewhite;
+  padding: 20px;
+  transition: transform 0.4s ease;
+}
+.work-box .numbering {
+  padding: 5px;
+  border-radius: 50%;
+  background: #18988B;
+  text-align: center;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  margin-right: 5px;
+}
+.work-box .work-list {
+  margin: 0;
+  padding: 0;
+}
+.work-box .work-list li {
+  transition: all 0.4s ease;
+  list-style: none;
+  font-size: 19px;
+  font-family: "DarkerGrotesque-medium";
+  display: flex;
+  align-items: center;
+}
+.work-box .work-list li iconify-icon {
+  margin-right: 2px;
+  color: #18988B;
+}
+.work-box .work-list li:hover {
+  cursor: default;
+  color: #18988B;
+}
+.work-box .work-list li:hover iconify-icon {
+  color: #003057;
+}
+.work-box:hover {
+  transform: translateY(-2px);
 }/*# sourceMappingURL=app.css.map */
