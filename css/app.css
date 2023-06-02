@@ -1013,7 +1013,7 @@ body::-webkit-scrollbar-thumb {
 .popup-gallery {
   display: flex;
   gap: 10px;
-  height: 350px;
+  height: auto;
   justify-content: center;
 }
 .popup-gallery a {
@@ -1027,16 +1027,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sideCard {
-  max-height: 490px;
+  max-height: 290px;
   overflow-x: hidden;
 }
 .sideCard::-webkit-scrollbar {
   background-color: #fefefe;
-  width: 7px;
+  width: 5px;
 }
 .sideCard::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: lightgrey;
+  background: #18988B;
 }
 
 .shareIcons {
@@ -1524,4 +1524,8 @@ input[type=checkbox] {
 }
 .work-box:hover {
   transform: translateY(-2px);
+}
+
+.popup-gallery img {
+  width: 100%;
 }/*# sourceMappingURL=app.css.map */

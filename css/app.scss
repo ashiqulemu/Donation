@@ -1185,7 +1185,7 @@ body::-webkit-scrollbar-thumb {
 .popup-gallery {
     display: flex;
     gap: 10px;
-    height: 350px;
+    height: auto;
     //  height: 360px;
     // overflow-x: hidden;
     // overflow-y: auto;
@@ -1212,17 +1212,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sideCard {
-    max-height: 490px;
+    max-height: 290px;
     overflow-x: hidden;
 
     &::-webkit-scrollbar {
         background-color: #fefefe;
-        width: 7px;
+        width: 5px;
     }
 
     &::-webkit-scrollbar-thumb {
         border-radius: 50px;
-        background: lightgrey;
+        background:$primary;
     }
 
 }
@@ -1833,4 +1833,8 @@ input[type=checkbox] {
     &:hover{
         transform: translateY(-2px); 
     }
+}
+
+.popup-gallery img{
+    width: 100%;
 }
